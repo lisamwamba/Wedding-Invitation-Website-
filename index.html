@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr &amp; Mrs Chawama — Wedding Invitation</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #fdf8f3;
+    color: #3b2a20;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #d4a373, #a67c52);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  header .flag { font-size: 1.6rem; margin-bottom: 10px; }
+  header h1 { font-size: 2.8rem; letter-spacing: 2px; }
+  header p { font-size: 1.15rem; margin-top: 8px; }
+  header .date {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 24px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+  section { margin-bottom: 50px; }
+  h2 {
+    font-size: 1.8rem;
+    color: #a67c52;
+    border-bottom: 2px solid #d4a373;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  .timeline { list-style: none; }
+  .timeline li {
+    background: #fff;
+    border-left: 5px solid #d4a373;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  }
+  .timeline strong { color: #a67c52; }
+  .venue-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    margin-bottom: 15px;
+  }
+  .venue-box h3 { color: #a67c52; margin-bottom: 5px; }
+  .map-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #a67c52;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .map-link:hover { text-decoration: underline; }
+  .payment-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    background: #fff;
+    border: 2px solid #d4a373;
+    border-radius: 12px;
+    padding: 25px;
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .card:hover, .card.selected {
+    background: #d4a373;
+    color: #fff;
+    transform: translateY(-5px);
+  }
+  .card .price { font-size: 2rem; font-weight: bold; margin: 10px 0; }
+  .pay-btn {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 25px auto 0;
+    padding: 15px;
+    background: #3b2a20;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .pay-btn:hover { background: #a67c52; }
+  #status { text-align: center; margin-top: 15px; color: #a67c52; font-weight: bold; }
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: #3b2a20;
+    color: #fdf8f3;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="flag">🇿🇲 Lusaka, Zambia</div>
+  <p>Together with their families</p>
+  <h1>Mr &amp; Mrs Chawama</h1>
+  <p>joyfully invite you to celebrate their wedding</p>
+  <div class="date">Saturday, 14th November 2026</div>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>💍 Event Schedule</h2>
+    <ul class="timeline">
+      <li><strong>10:00 AM — Church Ceremony (Holy Matrimony)</strong><br>Cathedral of the Holy Cross, Independence Avenue, Lusaka.</li>
+      <li><strong>12:30 PM — Photo Session</strong><br>Lusaka National Park &amp; surroundings, Lusaka.</li>
+      <li><strong>3:00 PM — Reception &amp; Lunch</strong><br>Mulungushi International Conference Centre, Great East Road, Lusaka.</li>
+      <li><strong>5:00 PM — Cake Cutting</strong><br>Mulungushi International Conference Centre — Main Hall.</li>
+      <li><strong>7:00 PM — Dancing &amp; Celebration</strong><br>Music, dancing, and farewell with the newlyweds.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📍 Venues</h2>
+
+    <div class="venue-box">
+      <h3>⛪ Church Ceremony</h3>
+      <p>Cathedral of the Holy Cross<br>Independence Avenue, Lusaka, Zambia</p>
+      <a class="map-link" target="_blank"
+         href="https://www.google.com/maps/search/?api=1&query=Cathedral+of+the+Holy+Cross+Lusaka">
+         View on Google Maps →
+      </a>
+    </div>
+
+    <div class="venue-box">
+      <h3>📸 Photo Session</h3>
+      <p>Lusaka National Park<br>Lusaka, Zambia</p>
+      <a class="map-link" target="_blank"
+         href="https://www.google.com/maps/search/?api=1&query=Lusaka+National+Park+Zambia">
+         View on Google Maps →
+      </a>
+    </div>
+
+    <div class="venue-box">
+      <h3>🎉 Reception &amp; Cake</h3>
+      <p>Mulungushi International Conference Centre<br>Great East Road, Lusaka, Zambia</p>
+      <a class="map-link" target="_blank"
+         href="https://www.google.com/maps/search/?api=1&query=Mulungushi+International+Conference+Centre+Lusaka">
+         View on Google Maps →
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎟️ RSVP &amp; Payment</h2>
+    <p style="text-align:center; margin-bottom:20px;">Please select your attendance type:</p>
+    <div class="payment-options">
+      <div class="card" onclick="selectOption(this, 'Single', 150)">
+        <h3>Single</h3>
+        <p>1 Guest</p>
+        <div class="price">K150</div>
+      </div>
+      <div class="card" onclick="selectOption(this, 'Couple', 250)">
+        <h3>Mr. &amp; Mrs. / Couple</h3>
+        <p>2 Guests</p>
+        <div class="price">K250</div>
+      </div>
+    </div>
+    <button class="pay-btn" onclick="payNow()">Proceed to Payment</button>
+    <p id="status"></p>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Mr &amp; Mrs Chawama · Lusaka, Zambia 🇿🇲 · We can't wait to celebrate with you!
+</footer>
+
+<script>
+  let selected = null;
+
+  function selectOption(card, type, amount) {
+    document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+    selected = { type, amount };
+    document.getElementById('status').textContent =
+      `Selected: ${type} — K${amount}`;
+  }
+
+  function payNow() {
+    if (!selected) {
+      alert('Please select Single or Couple first.');
+      return;
+    }
+    alert(`Redirecting to payment for ${selected.type} — K${selected.amount}`);
+    // Replace the alert above with your real payment gateway:
+    // window.location.href = selected.type === 'Single'
+    //   ? 'https://your-single-payment-link'
+    //   : 'https://your-couple-payment-link';
+  }
+</script>
+
+</body>
+</html>
